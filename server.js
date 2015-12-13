@@ -23,7 +23,7 @@ var port = process.env.PORT || 3000;
 
 app.use(express.static(path.join(__dirname, '/public')));
 
-app.get('/tips', function (req, res) {
+app.get('/programs', function (req, res) {
     res.send(JSON.stringify(programs))
 });
 

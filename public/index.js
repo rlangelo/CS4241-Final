@@ -1,9 +1,20 @@
-var programList = [];
+var programList = [{
+    ImagePath: "",
+    DwldFile: "",
+    Instructions: ""
+},
+{
+    ImagePath: "",
+    DwldFile: "",
+    Instructions: ""
+}];
+
+var searchQuery = "";
 
 function programs() {
     var req = new XMLHttpRequest();
 
-    req.open('GET', '/tips');
+    req.open('GET', '/programs');
 
     req.addEventListener("load", handleRes)
 
@@ -26,12 +37,13 @@ function handleRes() {
 function sendPosts(req) {
     var requestResponse = req.responseText;
     var json = JSON.parse(requestResponse);
-    tipList = json;
     var str = "";
 
-    json.forEach(function (p, i) {
-        str += programs(p);
-    })
+    for (i = 0; i < json.length; i++) {
+        if (json[i].indexOf(searchQuery) > -1) {
+            str += programs(programList[i])
+        }
+    }
 
     document.getElementById("Showoff").innerHTML = str;
 
