@@ -4,18 +4,7 @@ var fs = require('fs');
 var http = require('http');
 var underscore = require('underscore');
 
-var programs = [{
-    Title: "Word",
-    Description: "Use old, crusty, stale bread for breadcrumbs or french toast",
-    
-},
-{
-    Title: "Powerpoint",
-    Description: "Warm up your lemons before juicing for more juice",
-    
-}
-]
-
+var programNames = ["Word", "Powerpoint"]
 
 var app = express();
 var port = process.env.PORT || 3000;
@@ -24,7 +13,7 @@ var port = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname, '/public')));
 
 app.get('/programs', function (req, res) {
-    res.send(JSON.stringify(programs))
+    res.send(JSON.stringify(programNames))
 });
 
 
