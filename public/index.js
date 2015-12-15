@@ -1,10 +1,10 @@
 var programLists = [{
-    DwldFile: "/files/word.txt",
+    DwldFile: "/files/word.zip",
     ImagePath: "/icons/word.png",
     Instructions: "https://support.office.com/en-us/article/Download-and-install-Office-using-Office-365-for-business-on-your-PC-72977511-dfd1-4d8b-856f-405cfb76839c"
 },
 {
-    DwldFile: "/files/ppt.txt",
+    DwldFile: "/files/ppt.zip",
     ImagePath: "/icons/ppt.png",
     Instructions: "https://www.microsoft.com/en-us/download/details.aspx?id=6"
 }];
