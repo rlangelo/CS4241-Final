@@ -5,12 +5,12 @@ var http = require('http');
 var underscore = require('underscore');
 
 var programs = [{
-    Title: "Stale Bread Uses",
+    Title: "Word",
     Description: "Use old, crusty, stale bread for breadcrumbs or french toast",
     
 },
 {
-    Title: "More Lemon Juice",
+    Title: "Powerpoint",
     Description: "Warm up your lemons before juicing for more juice",
     
 }

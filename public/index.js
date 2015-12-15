@@ -22,7 +22,6 @@ function programs() {
     return false;
 }
 
-
 function handleRes() {
     if (this.readyState !== XMLHttpRequest.DONE)
         return;

@@ -1,3 +1,18 @@
 header {
   background-color: #AC2B37;
+  height: 150px;
+  margin: 0 0 0 0;
+}
+
+.title 
+{
+    text-align:center;
+    color:White;
+    font-size:48px;
+    font-family:"minion-pro",serif;
+}
+
+.textfield 
+{
+    margin:0 0 0 140;
 }
