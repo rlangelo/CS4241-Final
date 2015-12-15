@@ -9,6 +9,8 @@ var programList = [{
     Instructions: ""
 }];
 
+document.getElementById("submit").addEventListener("click", programs);
+
 var searchQuery = "";
 
 function programs() {
