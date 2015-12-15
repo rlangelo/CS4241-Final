@@ -2,17 +2,27 @@ header {
   background-color: #AC2B37;
   height: 150px;
   margin: 0 0 0 0;
+  width: 100%;
+  overflow: hidden;
+  text-align:center;
 }
 
 .title 
 {
-    text-align:center;
     color:White;
     font-size:48px;
     font-family:"minion-pro",serif;
+    float:left;
+    margin:100px 0 0 0;
 }
 
 .textfield 
 {
-    margin:0 0 0 140;
+    float:right;
+    margin:120px 0 0 8;
+}
+
+.logo 
+{
+    float:left;
 }
