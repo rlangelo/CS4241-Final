@@ -37,22 +37,26 @@ function handleRes() {
     if (this.status === 200) {
         sendPosts(this);
     }
-        
+
 }
 
 
 function sendPosts(req) {
     var requestResponse = req.responseText;
     var json = JSON.parse(requestResponse);
-    programmableLists = json;
+    //programmableLists = json;
     var str = "";
+    var counter = 2;
 
-    for (i = 0; i < json.length; i++) {
-        if (json[i].toUpperCase().indexOf(searchQuery.toUpperCase()) > -1) {
-            str += programTemplate(programLists[i])
-        }
-    }
+    json.forEach( function(p, i) {
+      str = programTemplate(programLists[i]);
+      if ((counter % 2) == 0) {
+        document.getElementById("left").innerHTML += str;
+      }
+      else {
+        document.getElementById("right").innerHTML += str;
+      }
+      counter++;
+    });
 
-    document.getElementById("Showoff").innerHTML = str;
-}
-
+  }
