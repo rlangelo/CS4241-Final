@@ -8,4 +8,3 @@ var programTemplate = _.template(
         "<a href='<%= Instructions %>' target='_blank'>Installation Instructions</a>" +
         "</div>"
         );
-    

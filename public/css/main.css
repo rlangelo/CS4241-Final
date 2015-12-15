@@ -7,7 +7,7 @@ header {
   text-align:center;
 }
 
-.title 
+.title
 {
     color:White;
     font-size:48px;
@@ -16,13 +16,39 @@ header {
     margin:100px 0 0 0;
 }
 
-.textfield 
+.postTitle
+{
+  color:#AC2B37;
+  font-size:18px;
+  font-family:"minion-pro",serif;
+}
+
+.textfield
 {
     float:right;
     margin:120px 0 0 8;
 }
 
-.logo 
+.logo
 {
     float:left;
+}
+
+.post {
+  margin:100px 0 0 200px;
+}
+
+.sectionLeft {
+  float:left;
+  width:49%;
+}
+
+.sectionRight {
+  float:left;
+  width:49%;
+}
+
+#container {
+  width:100%;
+  margin: 0 auto;
 }
