@@ -1,6 +1,6 @@
 var programTemplate = _.template(
         "<div class='post'>" +
-        "<p></p>" +
+        "<p class='postTitle'><%= Title %></p>" +
         "<a href='<%= DwldFile %>' download>" +
         "<img src='<%= ImagePath %>' style='width:300px;height:300px;'/>" +
         "</a>" +

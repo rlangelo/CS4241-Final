@@ -19,7 +19,6 @@ header {
 .postTitle
 {
   color:#AC2B37;
-  font-size:18px;
   font-family:"minion-pro",serif;
 }
 
@@ -27,6 +26,12 @@ header {
 {
     float:right;
     margin:120px 0 0 8;
+}
+
+.help
+{
+  float:right;
+  color:White;
 }
 
 .logo
