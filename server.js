@@ -4,16 +4,14 @@ var fs = require('fs');
 var http = require('http');
 var underscore = require('underscore');
 
-var programNames = ["Altium", "Audacity", "AutoCAD", "CD Burner XP", "CES Edupack", "ChemDrawPro", "Civil3D", "Creo",
+var programNames = ["Altium", "Audacity", "AutoCAD", "CD Burner XP", "CES Edupack", "ChemDrawPro", "AutoCAD Civil3D", "Creo",
                       "Cumulus", "DrJava", "Ecopy", "EndNote", "Flip4Mac", "Four Winds", "Internet Explorer 11",
-                      "Inventor", "Map3D", "Maple", "MathCad", "Mathematica", "Maya", "McAfee", "MEP", "Microsoft Net Framework",
+                      "Inventor", "AutoCAD Map3D", "Maple", "MathCad", "Mathematica", "Autodesk Maya", "McAfee", "MEP", "Microsoft Net Framework",
                       "Microsoft Office", "Microsoft Office Communicator", "Microsoft Visual Studio", "Motion Builder",
-                      "Mudbox", "Navisworks Manage", "OnCenter", "PuTTY", "Recap", "Remedy",
-                      "Remote Desktop Connection for Mac", "Revit", "Robot Structural Analysis", "SolidWorks",
-                      "SPSS", "Stuffit 2010", "Utility Design", "Viz", "Windows Media Encoder", "X11 for Intel Mac",
+                      "Autodesk Mudbox", "Navisworks Manage", "OnCenter", "PuTTY", "ReCap", "Remedy",
+                      "Remote Desktop Connection for Mac", "Autodesk Revit", "Robot Structural Analysis", "SolidWorks",
+                      "SPSS", "Stuffit 2010", "AutoCAD Utility Design", "Viz", "Windows Media Encoder", "X11 for Intel Mac",
                       "X-Win32"];
-
-var programsNames2 = ["Word", "Powerpoint"];
 
 var app = express();
 var port = process.env.PORT || 3000;
